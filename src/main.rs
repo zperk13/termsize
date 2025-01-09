@@ -97,7 +97,6 @@ fn main() -> std::io::Result<()> {
         match crossterm::event::read()? {
             crossterm::event::Event::Key(key_event) => match key_event.code {
                 crossterm::event::KeyCode::Backspace
-                | crossterm::event::KeyCode::Enter
                 | crossterm::event::KeyCode::Home
                 | crossterm::event::KeyCode::End
                 | crossterm::event::KeyCode::Delete
